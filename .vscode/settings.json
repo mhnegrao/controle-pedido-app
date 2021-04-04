@@ -1,0 +1,15 @@
+{
+    "sqltools.connections": [
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 5432,
+            "driver": "PostgreSQL",
+            "name": "controle-pedido-localhost",
+            "group": "dev",
+            "database": "controle-pedido",
+            "username": "postgres",
+            "password": "x3p06x3a"
+        }
+    ]
+}
