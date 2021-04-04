@@ -2,10 +2,10 @@ const axios = require('axios');
 const fake = require('faker/locale/en');
 const pedidoService = require('../services/pedidoService');
 
-
 /*gerar dados*/
 async function gerarDados() {
-    for (let i = 1; i <= 1; i++) {
+   
+    for (let i = 1; i <= 10; i++) {
 
         await pedidoService.create({
             id_cliente: fake.datatype.number(),
@@ -15,6 +15,7 @@ async function gerarDados() {
             quantidade: fake.datatype.number(),
             valor_pedido: fake.finance.amount(),
             observacao: fake.lorem.sentences(),
+            
         });
     }
 }
